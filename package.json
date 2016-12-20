@@ -1,0 +1,15 @@
+{
+  "name": "hbsrender",
+  "version": "1.0.0",
+  "description": "Render Handlebars templates and embed partials from the command line",
+  "main": "index.js",
+  "author": "Stefano Butera <stefano.butera@nethnic.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "2.9.0",
+    "handlebars": "4.0.6"
+  },
+  "bin": {
+    "hbsrender": "./bin/hbsrender.js"
+  }
+}
