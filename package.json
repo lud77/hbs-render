@@ -1,12 +1,12 @@
 {
   "name": "hbsrender",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Render Handlebars templates and embed partials from the command line",
   "main": "index.js",
   "author": "Stefano Butera <stefano.butera@nethnic.com>",
   "license": "MIT",
   "scripts": {
-    "build:readme": "node ./bin/hbsrender.js -t ./pkg/readme/README.md.hbs -c ./package.json > README.md"    
+    "build:readme": "node ./bin/hbsrender.js -t ./pkg/readme/README.md.hbs -c ./package.json > README.md"
   },
   "dependencies": {
     "commander": "2.9.0",
