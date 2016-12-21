@@ -1,12 +1,10 @@
-![Nethnic Logo](pkg/logo/logo.jpg)
+![](pkg/logo/logo.jpg)
 
-# v1.0.0
+# HbsRender v1.0.6
 > A CLI tool to render Handlebars templates with partials
 
 
 ## Installation
-
-Clone the repository
 
 	npm i hbsrender --save
 
@@ -53,7 +51,7 @@ To render to a file you can do:
 
 In this example, inside main_template.hbs you can refer to the partials "part1" and "part2" respectively using {{#> part1}} and {{#> part2}}.
 
-You can also provide default replacementes for a partial (should it be not provided on the command line), with the following snippet:
+You can also provide default replacementes for a partial (should it be not provided on the command line) using the following snippet:
 
 	{{#> part1}}
 		
