@@ -8,7 +8,7 @@
   "scripts": {
     "build:readme": "node ./bin/hbsrender.js -t ./pkg/readme/README.md.hbs -c ./package.json > README.md",
     "git:push": "git push -u origin master",
-    "prepublish": "npm version patch && npm run build:readme && npm run git:push"
+    "prepublish": "npm run build:readme && npm run git:push"
   },
   "dependencies": {
     "commander": "2.9.0",
