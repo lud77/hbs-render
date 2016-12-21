@@ -1,4 +1,4 @@
-# HbsRender v1.0.6
+# HbsRender v{{version}}
 > A CLI tool to render Handlebars templates with partials
 
 
@@ -47,15 +47,15 @@ To render to a file you can do:
 	./node_modules/.bin/hbsrender [options] > output.html
 
 
-In this example, inside main_template.hbs you can refer to the partials "part1" and "part2" respectively using {{#> part1}} and {{#> part2}}.
+In this example, inside main_template.hbs you can refer to the partials "part1" and "part2" respectively using \{{#> part1}} and \{{#> part2}}.
 
 You can also provide default replacementes for a partial (should it be not provided on the command line) using the following snippet:
 
-	{{#> part1}}
+	\{{#> part1}}
 		
 		...fallback content here...
 	
-	{{/part1}}
+	\{{/part1}}
 
 
 ## Licensing
