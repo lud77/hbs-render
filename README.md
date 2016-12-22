@@ -1,4 +1,4 @@
-# HbsRender v1.0.8
+# HbsRender v1.0.9
 > A CLI tool to render Handlebars templates with partials
 
 
