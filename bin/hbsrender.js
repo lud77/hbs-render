@@ -44,12 +44,9 @@ function loadPartials(partials, callback, ndx) {
  * Register the partials and render the template in the specified context
  */		 
 function render(template, partials, context) {
-	let len = partials.names.length;
-	for (let n = 0; n < len; n++) {
-		if (partials.contents[n] !== false) {
-			hbs.registerPartial(partials.names[n], partials.contents[n]);
-		}
-	}
+	partials.contents.map((content, n) => {
+		if (content && partials.names[n]) hbs.registerPartial(partials.names[n], content);
+	});
 
 	var res = hbs.compile(template)(context);
 	console.log(res);
