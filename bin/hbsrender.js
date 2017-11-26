@@ -24,7 +24,7 @@ function collectPartials(val, memo) {
  * Load the partials if they exist
  */
 function loadPartials(partials, callback, ndx) {
-	let i = (ndx === undefined) ? 0 : ndx;
+	let i = ndx || 0;
 	if (partials.files[i] !== undefined) {
 		fs.readFile(partials.files[i], function(err, buffer) {
 			if (err) {
