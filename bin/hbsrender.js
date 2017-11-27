@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-"use strict";
-
 const options = require("commander");
 const hbs = require("handlebars");
 const fs = require("fs");
