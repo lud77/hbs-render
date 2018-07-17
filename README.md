@@ -4,7 +4,7 @@
 
 ## Installation
 
-	npm i hbsrender --save
+	npm i hbsrender
 
 
 ## Why?
