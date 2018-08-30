@@ -37,14 +37,14 @@ The value of the "-p" parameter <partial> must be specified in the format *parti
 
 ## Example
 
-	./node_modules/.bin/hbsrender -t main_template.hbs -c ./context.json -p part1:parts/part1.hbs -p part2:parts/part2.hbs
+	npx hbsrender -t main_template.hbs -c ./context.json -p part1:parts/part1.hbs -p part2:parts/part2.hbs
 
 
 This will render the main_template.hbs to standard output, pulling variables for the rendering from context.json.
 
 To render to a file you can do:
 
-	./node_modules/.bin/hbsrender [options] > output.html
+	npx hbsrender [options] > output.html
 
 
 In this example, inside main_template.hbs you can refer to the partials "part1" and "part2" respectively using {{#> part1}} and {{#> part2}}.
